@@ -15,7 +15,9 @@ const BlockSideRightLineDown : React.FC<BSRLDProps> = (props : BSRLDProps) => {
             <div style = {lineStyle()}>
 
             </div>
-            <div style = {barStyle()}>
+            <div style = {barStyle()} onClick = {() => {
+                props.onClick()
+            }}>
 
             </div>
 
